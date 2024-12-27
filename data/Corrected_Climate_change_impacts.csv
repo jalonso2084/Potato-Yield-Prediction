@@ -1,0 +1,56 @@
+
+import pandas as pd
+import numpy as np
+
+# Define the cleaning and standardization function
+def clean_and_standardize_data(dataframes):
+    standardized_dfs = []
+
+        if df.empty:
+            print(f"DataFrame {i+1} is empty. Skipping.")
+            continue
+
+        print(f"Processing DataFrame {i+1}...")
+
+        # Remove rows and columns with all NaN values
+        df = df.dropna(how='all').dropna(axis=1, how='all')
+
+        # Strip whitespace from headers and standardize column names
+        df.columns = df.columns.str.strip().str.lower().str.replace(' ', '_').str.replace(r'[\W]+', '', regex=True)
+
+        # Handle missing values (example: fill with mean for numeric columns)
+        for col in df.columns:
+            if df[col].dtype in [np.float64, np.int64]:
+                df[col].fillna(df[col].mean(), inplace=True)
+            else:
+                df[col].fillna('Unknown', inplace=True)
+
+        # Convert columns to appropriate data types
+        for col in df.columns:
+            if df[col].dtype == object:
+                try:
+                    df[col] = pd.to_numeric(df[col])
+                except ValueError:
+                    pass
+
+        # Check for duplicate rows and drop them
+        df = df.drop_duplicates()
+
+        # Reset index for consistency
+        df.reset_index(drop=True, inplace=True)
+
+        # Append the cleaned DataFrame to the list
+        standardized_dfs.append(df)
+
+        print(f"DataFrame {i+1} processed successfully.")
+
+    return standardized_dfs
+
+# Example usage
+# Assuming `dataframes` is a list of DataFrames you have extracted
+# dataframes = [df1, df2, df3]
+# standardized_dataframes = clean_and_standardize_data(dataframes)
+
+# Exporting to a single consolidated file
+# consolidated_df = pd.concat(standardized_dataframes, ignore_index=True)
+# consolidated_df.to_excel("consolidated_cleaned_data.xlsx", index=False)

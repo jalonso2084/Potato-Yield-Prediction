@@ -1,0 +1,5 @@
+P-Saturation Index Min,P-Saturation Index Max,Updated P Min,Updated P Max,Updated P Midpoint,P Savings Min,P Savings Max,P Savings Midpoint,Soil pH Range
+0.1,4.0,100,300,200,50,100,75,>5.5
+7.5,10.5,200,250,225,40,80,60,>5.5
+12.0,14.0,150,210,180,30,50,40,>5.5
+19.5,23.5,180,220,200,60,100,80,>5.5
