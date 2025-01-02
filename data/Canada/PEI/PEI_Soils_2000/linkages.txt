@@ -1,0 +1,45 @@
+ 
+Linkage summary for PED103
+===========================
+records in SOIL.PAT     = 1867
+records in SOIL.MAPUNIT = 966
+records in SOIL.CMP     = 2088
+records in SOIL.NAME    = 54
+records in SOIL.LAYER   = 213
+records in SOIL.PAT with no match in SOIL.CMP   = 0
+records in SOIL.CMP with no match in SOIL.NAME  = 0
+records in SOIL.CMP with no match in SOIL.LAYER = 165
+ 
+SOILTYPEs in SOIL.CMP with no records in SOIL.NAME
+==================================================
+Record  SOILTYPE  FREQUENCY
+ 
+SOILTYPEs in SOIL.CMP with no records in SOIL.LAYER
+===================================================
+Record  SOILTYPE  SOILNAME                 FREQUENCY
+     1  PEAPT   N Airport                      1
+     2  PEZPB   N Borrow Pit                   3
+     3  PEZCB   N Coastal Beach               16
+     4  PEZDS   N Dune Sand                   17
+     5  PEZPG   N Gravel Pit                   2
+     6  PEZSM   N Salt Marsh                  39
+     7  PEZSC   N Stream Complex              86
+     8  PEZZZ   N Water                        1
+ 
+Dropped records
+===============
+dropped from SOIL.CMP   (no match in SOIL.PAT)  = 26
+dropped from SOIL.NAME  (no match in SOIL.CMP)  = 477
+dropped from SOIL.LAYER (no match in SOIL.CMP)  = 2242
+ 
+ 
+Workspace documentation generated on 00-03-16.10:04:57.Thu
+for prod directory = /home/andy/prod/standardize/ped103
+ 
+SMUF file:
+-r--r--r--   1 root       archive      79860 Mar 16 09:44 /nsdb/pe/smuf/smufpe75/20000316/smufpe75.dbf
+Name file:
+-r--r--r--   1 schutp     archive      47338 Oct 29 12:02 /nsdb/.user_view/pe_name.dbf
+Layer file:
+-r--r--r--   1 schutp     archive     414074 Oct 29 12:02 /nsdb/.user_view/pe_layer.dbf
+

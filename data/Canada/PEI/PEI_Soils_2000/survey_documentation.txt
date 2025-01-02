@@ -1,0 +1,140 @@
+04  PROVINCE: PE
+
+05  PROJECT:
+        REPORT NUMBER: 
+        REPORT NAME  : SOILS OF PRINCE EDWARD ISLAND
+        MAP TITLE:  Soils of PRINCE EDWARD ISLAND
+        LRRC CONTRIBUTION #: 83-54
+
+06  MAP/REPORT PRINTED PUBLICATION DATE: 1988
+
+07  AUTHORS AND CONTRIBUTORS:
+    NAME                      AFFILIATION
+    ------------------------- --------------------------------------------------
+        MACDOUGALL, J.I.      L.R.R.C., CANADA DEPARTMENT OF AGRICULTURE
+        VEER, C.              L.R.R.C., CANADA DEPARTMENT OF AGRICULTURE
+        WILSON, F.            P.E.I. DEPARTMENT OF AGRICULTURE
+
+08  CONTACT PERSON AT LRRC OTTAWA:
+
+09  PHOTOGRAPHY SCALE: 1:12000
+
+10  SIL: 2 (Printed on 1:10,000 scale ortho photo map)
+
+11  OBSERVATION STRATEGY AND SUPPORTING DATA FOR:
+        Intensity level requested was for a survey at 1:20,000 scale.
+        This was the approximate level of input on the cleared land,
+        but somewhat less detailed in areas more difficult to traverse
+        and map. Access was by both walking fields and driving roads.
+        Observation density was very verible and depended upon
+        familiarity of the surveyor with the terrain and the difficulty
+        of access (extreme wetness and very dense shrub vegetation),
+        and the complexity of soil pattern/association. Inspection
+        density: Well drained 1 per 4 ha (est.). The slope phase was
+        mainly derived by means of measuring 2 M contour intervals.
+        Field checking proved this method to be far superior over
+        sterographic interpretation. Drainage interpretation is
+        dependable between the well drained and imperfect/poorly
+        drained soils. Much less dependable is the moderately
+        well-drained phase (short duration spring wetness) because
+        soil morphology often expreses this condition very weakly.
+        Lease dependable are poorly drained areas in respect to mode of
+        deposition and texture (and associated predictability of
+        hydraulic conductivity etc.). In many instances this would
+        not affect capability for agriculture. 45 modal profiles
+        published.
+
+12  SYMBOL CONFIGURATION INCLUDING CONCEPT OF SOIL MAP UNIT:
+
+    SOIL SERIES : EXTENT - SOIL SERIES : EXTENT - SOIL SERIES : EXTENT (*)
+    ------------------------------------------------------------------
+                 DOMINANT SLOPE - SUBDOMINANT SLOPE
+
+        - (*) denotes (p. (* is a plotter code pattern if 50% or more
+          of the area is imperfectly or poorly drained.
+        - in a single series symbol configuration teh extent is not
+          indicated e.g. Al/BD
+
+                           SOIL SERIES
+                ----------------------------------
+                DOMINANT SLOPE   SUBDOMINANT SLOPE
+
+        - up to 30% of the extent of the polygon might not be
+          identified because all other soils not identified in the
+          symbol are less then 10% of the extent individually.
+
+        SMUFPE75.DBF :
+
+             Dominant slope in polygon is SLOPEP1, subdominant slope
+             is SLOPEP2
+
+            0.5 = 0-1 % slope A
+            1.0 = 0-2 % slope B
+            3.5 = 2-5 % slope C
+            7.0 = 5-9 % slope D
+            12.0 = 9-15 % slope E
+            22.5 = 15-30% slope F
+            37.5 = over 30% slope G
+            10.0 = 5-15% slope I (dominant slope 5-9%, subdom. 9-14%)
+            19.5 = 9-30% slope J (dominant slope 9-14%, subdom.
+                   14-30%)
+            45.0 = 45+% slope steep (STZ modifier)
+
+        MODIFIER1, MODIFIER2 are left blank except for identifying
+        soils which are shallow to bedrock. The letter D indicates
+        shallow to bedrock.
+
+        SMUFER75.DBF:
+
+        This file lists those map units which are in error in the
+        UNIQUE map unit listing and indicates their corrections. The map
+        unit errors are identified by 999 in the SMUFPEI.DBF.
+
+        SNFPEI.DBF: Note spelling of O`Leary in SMFPEI.DBF (NOT
+                    O'Leary).
+
+13  ANALYTICAL METHODS LIST [refer to McKeague if possible]:
+        - pH was determined electrometrically on a soil-liquid slurry,
+          using water and calcium chloride (0.01 M.CaCl2).
+        - Organic matter was determined by wet combustion,
+          colorometric method (Sims, J.R. and Haley, V.A. 1971 (Soil
+          Sci. 112, 137-141)). Carbon was determined by induction
+          furnace for profiles Tignish, O`Leary, Duvar, Margate.
+        - extractable Fe, Al. oxalate and dithionite extraction were
+          determined by procedures of McKeague and Day (Can. J. Soil
+          Sci. 1966, 46: 13-22)
+        - extractable Ca, Mg, K by atomic absorption. Extractable
+          phosphorus by medium strength Bray method, calcium and
+          potassium by extraction with NH4Ac adjusted to pH7. C.E.C.
+          (permanent charge) extraction with 2N. NaCl after
+          equilibration of the soil with 0.01 M CaCl2. Methods used
+          by L.R.R.C. Analytical Services Laboratory
+        - total gravel, sand, silt, clay. Pipette method, L.R.R.C.
+          Analytical Service Laboratory. Organic matter content and
+          iron oxides were removed by pretreatments, clay was
+          determined by pipette, sand by sieving and silt by
+          difference. Gravel percent is based on the total sample and
+          sand, silt, clay on the total fines (less then 2mm).
+        - Determination for water retension, bulk density (q/cc,
+          ovendry) and hydraulic conductivity (cm/hr) were done on
+          triplicate "undisturbed" core except for the 15 bar
+          determination which was on loose samples.
+
+        PLEASE NOTE: The value in the SLFPEI field KP10 is the KP6
+        value and therefore a correction of (?)% less than the value
+        for KP6 should be applied if the KP10 value is required. The
+        value of this correction would depend on texture and 0M%. KP6
+        is an acceptable value for field capacity for most PEI soils
+        with FSL texture.
+
+14  ESTIMATE OF RELIABILITY: N/A
+
+15  LIST OF ORIGINAL CATEGORIES AND CONVERSIONS (OPTIONAL):
+        Soils (52 series including land types) converted in SMUF.
+
+16  OTHER PROVINCIAL INTERPRETATIONS:
+
+17  OTHER PROVINCIAL COMMENTS:
+        All files were compiled by C. Veer, Charlottetown, P.E.I.
+        (Nov.1987-Aug.1988)
+
